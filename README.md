@@ -1,4 +1,4 @@
-# Vanessa Robledo Delgado — Academic Website
+# Vanessa Robledo — Academic Website
 
 Static academic website prepared for GitHub Pages at `https://robledovd.github.io`.
 
@@ -11,26 +11,9 @@ Static academic website prepared for GitHub Pages at `https://robledovd.github.i
 5. Select the `main` branch and `/ (root)`, then click **Save**.
 6. GitHub will publish the site at `https://robledovd.github.io` after a few minutes.
 
-## Replace the photograph placeholder
+## Profile photograph
 
-1. Add a portrait image to `assets/`, preferably as `portrait.jpg`.
-2. In `index.html`, replace the complete `portrait-placeholder` block with:
-
-```html
-<img class="portrait-image" src="assets/portrait.jpg" alt="Portrait of Vanessa Robledo Delgado">
-```
-
-3. Add this rule to `styles.css`:
-
-```css
-.portrait-image {
-  width: min(310px, 33vw);
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 170px 170px 22px 22px;
-}
-```
+The profile photograph is `assets/VanessaRobledo.png`, referenced in `index.html` and styled with `.portrait-image` in `styles.css`.
 
 ## Update the site
 
@@ -45,4 +28,3 @@ Static academic website prepared for GitHub Pages at `https://robledovd.github.i
 - Expand the Caribbean workshop locations if desired.
 - Add any publications not included in the three source CVs.
 - Add a LinkedIn URL if it should appear in the profile links.
-- Replace the photograph placeholder.
