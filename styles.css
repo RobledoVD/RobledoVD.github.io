@@ -155,6 +155,7 @@ h1 em { font-weight: 400; color: var(--teal); }
 
 .contact-section { background: var(--mint); padding: 130px 0; text-align: center; }
 .contact-inner { max-width: 900px; }
+.contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 .contact-inner h2 { font-size: clamp(3rem, 6vw, 5.5rem); }
 .contact-inner > p:not(.eyebrow) { max-width: 650px; margin: 28px auto; }
 .button.light { background: white; color: var(--ink); }
