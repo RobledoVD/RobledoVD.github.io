@@ -131,7 +131,7 @@ h1 em { font-weight: 400; color: var(--teal); }
 .workshop-list p { margin: 0; font-size: .86rem; }
 .conference-block { margin-top: 70px; display: grid; grid-template-columns: .65fr 1.35fr; gap: 70px; padding-top: 55px; border-top: 1px solid var(--line); }
 .conference-block h3 { font-family: var(--serif); color: var(--ink); font-size: 2.2rem; font-weight: 400; margin: 0; }
-#presentations { scroll-margin-top: 90px; }
+#presentations, #awards { scroll-margin-top: 90px; }
 .conference-year-group + .conference-year-group { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
 .conference-year { color: var(--teal); font-family: var(--serif); font-size: 1.5rem; font-weight: 400; margin: 0 0 16px; }
 .conference-citations { list-style: none; margin: 0; padding: 0; }
@@ -167,16 +167,22 @@ h1 em { font-weight: 400; color: var(--teal); }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .reveal { opacity: 1; transform: none; transition: none; } }
 
 @media (min-width: 901px) and (max-width: 1100px) {
-  .nav-links { gap: 18px; }
   .tools-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 1101px) and (max-width: 1250px) {
+  .nav-links { gap: 18px; }
+}
+
+@media (max-width: 1100px) {
   .nav-toggle { display: block; }
-  .nav-links { position: fixed; inset: 74px 0 auto; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 18px 20px 26px; background: var(--paper); border-bottom: 1px solid var(--line); }
+  .nav-links { position: fixed; inset: 74px 0 auto; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 18px 20px 26px; background: var(--paper); border-bottom: 1px solid var(--line); max-height: calc(100dvh - 74px); overflow-y: auto; }
   .nav-links.open { display: flex; }
   .nav-links a { padding: 12px 0; }
   .nav-cta { border: 0; border-radius: 0; }
+}
+
+@media (max-width: 900px) {
   .hero { padding-top: 125px; }
   .hero-grid { grid-template-columns: 1fr; gap: 55px; }
   .portrait-wrap { justify-self: start; }
